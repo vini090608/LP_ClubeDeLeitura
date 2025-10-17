@@ -1,0 +1,140 @@
+section#hero{
+    background: url(../assets/images/blur-rosa1.svg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+
+    .h-bg{
+        background: url(../assets/images/hero-background.svg) no-repeat center;
+        background-size: contain;
+        height: 100vh; 
+        justify-content: center;
+
+        animation: slideUp 1s ease-out forwards;
+        opacity: 0;
+        
+        header{
+            max-width: 80em;
+            margin: auto;
+            animation: slideUp 1s 0.4ms ease-out forwards;
+            opacity: 0;
+
+            nav{
+                display: flex;             
+                justify-content: space-between;   
+                align-items: center; 
+                padding: 2rem;
+                animation: slideUp 1s 0.6ms ease-out forwards;
+                opacity: 0;
+
+                a{
+                    animation: slideUp 1s 0.8ms ease-out forwards;
+                    opacity: 0;
+
+                    text-decoration: none;
+
+                    &.btn-sm:hover{
+                        background-color: var(--pink-base);
+                        transition: 1s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        div.text{
+            margin-top: 6rem;
+            max-width: 656px;
+            justify-self: center;
+            text-align: center;
+
+            h3{
+                justify-self: center;
+                max-width: 28rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    div.text2{
+        text-align: center;
+        padding: 114px 32px 158px 32px;
+        margin-top: 14rem;
+        position: relative;
+
+        h2{
+            display: inline-block;
+            max-width: 72rem;
+            font: var(--subtitle);
+            color: var(--text-body);
+            opacity: 50%;
+        }
+
+        .img{
+            #book{
+                transform: translateX(4rem) translateY(-15rem);
+                opacity: 0;
+
+                &:hover{
+                    transform: translateX(4rem) translateY(-15rem) rotateZ(40deg) scale(1.2);
+                }
+            }
+
+            #stick{
+                transform: translateX(-35rem) translateY(1rem)  rotateZ(-80deg);
+                opacity: 0;
+
+                &:hover{
+                    transform: translateX(-35rem) translateY(1rem)  rotateZ(-20deg) scale(1.2);
+                }
+            }
+
+            #crystal{
+                transform: translateX(30rem) translateY(1rem) rotateZ(5deg);
+                opacity: 0;
+
+                &:hover{
+                    transform: translateX(30rem) translateY(1rem) rotateZ(25deg) scale(1.2);
+                }
+            }
+        }
+
+        &:hover{
+            h2{
+                transition: 3s ease-in-out;
+                opacity: 1;
+                b{
+                    color: var(--blue-light);
+                }
+            }
+            .img{
+                #book{
+                    opacity: 1;
+                    transition: 1s ease-in-out;
+
+                }
+                #stick{
+                    opacity: 1;
+                    transition: 2s ease-in-out;
+                }
+                #crystal{
+                    opacity: 1;
+                    transition: 3s ease-in-out;
+                }
+            }
+        }
+    }
+}   
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes apear{
+
+}

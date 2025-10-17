@@ -33,7 +33,7 @@
     --title-sm: 700 2rem var(--ff-family);
     --title-xs: 700 1rem var(--ff-family);
 
-    --subtitle: 500 1rem/2 var(--ff-family);
+    --subtitle: 400 2rem/2 var(--ff-family);
 
     --body-lg: 400/700 1.25rem/1.4 var(--ff-family);
     --body-md: 400/700 1rem/1.4 var(--ff-family);
@@ -44,4 +44,40 @@
     --link: 500 0.875rem var(--ff-family);
     --tag: 700 0.625 var(--ff-family);
 
+}
+
+body{
+    background-color: var(--shape-background);
+    font-family: var(--ff-family);
+    color: var(--text-title);
+}
+
+h1{
+    font: var(--title-lg);
+}
+
+h2{
+    font: var(--subtitle);
+}
+
+h3{
+    font: var(--body-lg);
+}
+
+.btn-sm{
+    font: var(--button);
+    color: var(--text-title);
+
+    padding: 12px 20px 12px 20px;
+    background-color: var(--pink-dark);
+    border-radius: .5rem;
+}
+
+.btn-md{
+    font: var(--button);
+    color: var(--text-title);
+
+    padding: 12px 52.5px 12px 52.5px;
+    background-color: var(--pink-dark);
+    border-radius: .5rem;
 }
