@@ -1,0 +1,107 @@
+section#kit{
+    background: url(../assets/images/blur-rosa1.svg) no-repeat center;
+    background-size:cover;
+    height: 150vh;
+    align-items: center;
+    
+    div.text-kit{
+        justify-items: center;
+        padding-top: 256px;
+        padding-bottom: 120px;
+        
+        div{
+            display: inline;
+            display: flex;
+            gap: 1rem;
+
+            h2{
+                font: var(--title-sm);
+                padding-bottom: .5rem;
+            }
+            img{
+                transform: rotateZ(8deg);
+            }
+        }
+    }
+
+    div.img-kit{
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+
+        #book{
+            position: absolute;
+            z-index: 1;
+        }
+        
+        #pin{
+            position: absolute;
+            z-index: 0;
+            
+            transform: translateX(-16rem) translateY(25rem) rotateZ(-10deg);
+
+            opacity: 0;
+        }
+
+        #bk-yellow{
+            position: absolute;
+            z-index: 0;
+
+            transform: translateX(18rem) translateY(-5rem) rotateZ(10deg);
+
+            opacity: 0;
+        }   
+
+        #bk-purple{
+            position: absolute;
+            z-index: -1;
+
+            transform: translateX(24rem) translateY(0rem) rotateZ(15deg);
+
+            opacity: 0;
+        }
+
+        #text-kit{
+            position: absolute;
+            z-index: -2;
+
+            transform: translateX(-3rem) translateY(-6rem);
+
+            opacity: 0;
+        }
+
+        &:hover{
+                #pin{
+                    position: absolute;
+                    z-index: 0;
+                    transform: translateX(-16rem) translateY(25rem) rotateZ(-10deg);
+                    opacity: 1;
+                    transition: 1s ease-in-out;
+                }
+
+                #bk-yellow {
+                    position: absolute;
+                    z-index: 0;
+                    transform: translateX(18rem) translateY(-5rem) rotateZ(10deg);
+                    opacity: 1;
+                    transition: 1s ease-in-out;
+                }
+
+                #bk-purple {
+                    position: absolute;
+                    z-index: -1;
+                    transform: translateX(24rem) translateY(0rem) rotateZ(15deg);
+                    opacity: 1;
+                    transition: 1s ease-in-out;
+                }
+
+                #text-kit {
+                    position: absolute;
+                    z-index: -2;
+                    transform: translateX(-3rem) translateY(-6rem);
+                    opacity: 1;
+                    transition: 1s ease-in-out;
+                }
+            }
+    }
+}

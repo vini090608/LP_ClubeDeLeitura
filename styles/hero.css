@@ -27,7 +27,7 @@ section#hero{
                 opacity: 0;
 
                 a{
-                    animation: slideUp 1s 0.8ms ease-out forwards;
+                    animation: slideUp 1s ease-out forwards;
                     opacity: 0;
 
                     text-decoration: none;
@@ -40,7 +40,7 @@ section#hero{
             }
         }
 
-        div.text{
+        div.text-hero{
             margin-top: 6rem;
             max-width: 656px;
             justify-self: center;
@@ -54,9 +54,9 @@ section#hero{
         }
     }
 
-    div.text2{
+    div.text-hero2{
         text-align: center;
-        padding: 114px 32px 158px 32px;
+        padding: 114px 32px 128px 32px;
         margin-top: 14rem;
         position: relative;
 
@@ -68,7 +68,7 @@ section#hero{
             opacity: 50%;
         }
 
-        .img{
+        .img-hero{
             #book{
                 transform: translateX(4rem) translateY(-15rem);
                 opacity: 0;
@@ -105,7 +105,7 @@ section#hero{
                     color: var(--blue-light);
                 }
             }
-            .img{
+            .img-hero{
                 #book{
                     opacity: 1;
                     transition: 1s ease-in-out;
@@ -133,8 +133,4 @@ section#hero{
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-@keyframes apear{
-
 }
