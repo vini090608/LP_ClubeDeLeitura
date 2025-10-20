@@ -38,7 +38,7 @@
     --body-lg: 400/700 1.25rem/1.4 var(--ff-family);
     --body-md: 400/700 1rem/1.4 var(--ff-family);
     --body-sm: 400/700 0.875rem/1.4 var(--ff-family);
-    --body-xs: 400/700 0.75rem/1.4 var(--ff-family);
+    --body-xs: 400/600 0.75rem/1.4 var(--ff-family);
 
     --button: 700 0.875rem var(--ff-family); 
     --link: 500 0.875rem var(--ff-family);

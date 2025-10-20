@@ -1,0 +1,206 @@
+section#bundles{
+    height: 140vh;
+    overflow: hidden;
+    #blur{
+        background: url(../assets/images/blur-azul.svg) no-repeat center;
+        background-size: cover;
+        height: 170vh;
+    
+        justify-items: center;
+        
+        h2{
+            font: var(--title-sm);
+            padding-top: 13rem;
+            padding-bottom: 10rem;
+            max-width: 19rem;
+            text-align: center;
+        }
+        
+        #container{
+            display: flex;
+            gap: 1rem;
+            
+        
+            .card-premium{
+                position: relative;
+                height: 416px;
+                width: 288px;
+
+                background-color: var(--shape-hover);
+                border-radius: 1rem;
+                padding-left: 2rem;
+                padding-top: 1.5rem;
+
+                img{
+                    position: absolute;
+                    transform: translateY(-4.7rem);
+                }
+
+                #title{
+                    display: flex;
+                    align-items: center;
+                    /* justify-items: center; */
+                    gap: 4rem;
+
+                    & :nth-child(1){
+                        font: var(--title-xs);
+                        color: var(--pink-light);
+                    }
+
+                    & :nth-child(2){
+                        font: var(--tag);
+                        letter-spacing: 5%;
+                        background-color: var(--shape-stroke);
+                        padding: 9px 20px 9px 20px;
+                        border-radius: 1rem;
+
+                    }
+                }
+
+                #price{
+                    padding-top: 1.5rem;
+                    padding-bottom: 4.5rem;
+                    p:first-child {
+                        font: var(--title-md);
+                        padding-bottom: .5rem;
+                        span{
+                            font: var(--title-xs);
+                        }
+                    }
+                    p:last-child{
+                        font: var(--body-sm);
+                        color: var(--text-label);
+                    }
+                }
+
+                ul{
+                    margin-bottom: 1.5rem;
+
+                    li{
+                       background: url(../assets/icons/stars-purple-list.svg) no-repeat;
+                       
+                       padding-left: 2.5rem;
+                       padding-top: .65rem;
+                       margin-left: -1.5rem;
+   
+                       list-style-type: none;
+                       font: var(--body-xs);
+                   }
+                }
+
+                nav a{
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+                    justify-self: center;
+                    text-decoration: none;
+                    padding: 12px 53.5px 12px 53.5px;
+                    margin-left: -2rem;
+
+                    color: var(--text-title);
+                    font: var(--button);
+                    background-color: var(--pink-dark);
+                    border-radius: .5rem;
+                }
+
+            }
+        
+            .card-free{
+                position: relative;
+                height: 416px;
+                width: 288px;
+        
+                background-color: var(--shape-base);
+                border: 2px solid var(--shape-hover);
+                border-radius: 1rem;
+                padding-left: 2rem;
+                padding-top: 1.5rem;
+
+                img{
+                    position: absolute;
+                }
+
+                #title{
+                    display: flex;
+                    align-items: center;
+                    /* justify-items: center; */
+                    gap: 4rem;
+
+                    & p{
+                        font: var(--title-xs);
+                        color: var(--blue-light);
+                    }
+                }
+
+                #price{
+                    padding-top: 1.5rem;
+                    padding-bottom: 4.5rem;
+                    p:first-child {
+                        font: var(--title-md);
+                        padding-bottom: .5rem;
+                        span{
+                            font: var(--title-xs);
+                        }
+                    }
+                    p:last-child{
+                        font: var(--body-sm);
+                        color: var(--text-label);
+                    }
+                }
+
+                ul{
+                    margin-bottom: 1.5rem;
+
+                    li{
+                       background: url(../assets/icons/star-blue-list.svg) no-repeat;
+                       
+                       padding-left: 2.5rem;
+                       padding-top: .65rem;
+                       margin-left: -1.5rem;
+   
+                       list-style-type: none;
+                       font: var(--body-xs);
+                   }
+                }
+
+                nav a{
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+                    justify-self: center;
+                    text-decoration: none;
+                    padding: 12px 53.5px 12px 53.5px;
+                    margin-left: -2rem;
+
+                    color: var(--text-title);
+                    font: var(--button);
+                    background-color: var(--blue-dark);
+                    border-radius: .5rem;
+                }
+
+            }
+
+            .card-1{
+                z-index: 0;
+                transform: translateX(1rem) translateY(3rem) rotateZ(-10deg);
+
+                img{
+                    transform: translateX(-5rem) translateY(-6rem) rotateZ(90deg);
+                }
+            }
+            
+            .card-2{
+                z-index: 1;
+            }
+            
+            .card-3{
+                z-index: 0;
+                transform: translateX(-1rem) translateY(3rem) rotateZ(10deg);
+                
+                img{
+                    transform: translateX(18rem);
+                }
+            }
+        }
+    }
+}
