@@ -1,5 +1,5 @@
 section#bundles{
-    height: 140vh;
+    height: 150vh;
     overflow: hidden;
     #blur{
         background: url(../assets/images/blur-azul.svg) no-repeat center;
@@ -20,7 +20,6 @@ section#bundles{
             display: flex;
             gap: 1rem;
             
-        
             .card-premium{
                 position: relative;
                 height: 416px;
@@ -101,6 +100,12 @@ section#bundles{
                     font: var(--button);
                     background-color: var(--pink-dark);
                     border-radius: .5rem;
+
+                    &:hover{
+                        background-color: var(--pink-light);
+                        transition: 1s ease-in-out;
+
+                    }
                 }
 
             }
@@ -176,6 +181,11 @@ section#bundles{
                     font: var(--button);
                     background-color: var(--blue-dark);
                     border-radius: .5rem;
+
+                    &:hover{
+                        background-color: var(--blue-light);
+                        transition: 1s ease-in-out;
+                    }
                 }
 
             }
