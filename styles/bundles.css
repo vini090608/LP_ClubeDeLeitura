@@ -192,23 +192,78 @@ section#bundles{
 
             .card-1{
                 z-index: 0;
-                transform: translateX(1rem) translateY(3rem) rotateZ(-10deg);
+                transform: translateX(1rem) translateY(3rem) rotate(-10deg);
 
                 img{
-                    transform: translateX(-5rem) translateY(-6rem) rotateZ(90deg);
+                    transform: translateX(-5rem) translateY(-6rem) rotate(90deg);
+                }
+
+                &:hover{
+                    z-index: 2;
+                    transform: translateX(1rem) translateY(3rem) rotate(-10deg) scale(1.1);
+                    transition: .5s ease-in-out;
                 }
             }
             
             .card-2{
                 z-index: 1;
+
+                &:hover{
+                    z-index: 2;
+                    transform: scale(1.1);
+                    transition: .5s ease-in-out;
+                    
+                }
             }
             
             .card-3{
                 z-index: 0;
-                transform: translateX(-1rem) translateY(3rem) rotateZ(10deg);
+                transform: translateX(-1rem) translateY(3rem) rotate(10deg);
                 
                 img{
                     transform: translateX(18rem);
+                }
+
+                &:hover{
+                    z-index: 2;
+                    transform: translateX(-1rem) translateY(3rem) rotate(10deg) scale(1.1);
+                    transition: .5s ease-in-out;
+
+                    & img{
+                        transform: translateX(18rem) rotate(90deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (width< 80em){
+    section#bundles{
+        height: 220vh;
+        #blur{
+            #container{
+                display: flex;
+                flex-direction: column;
+
+                .card-1{
+                    transform: translateX(0rem) translateY(0rem) rotate(0deg);
+
+                    &:hover{
+                        z-index: 2;
+                        transform: translateX(0rem) translateY(0rem) rotate(0deg) scale(1.1);
+                        transition: .5s ease-in-out;
+                    }
+                }
+
+                .card-3{
+                    transform: translateX(0rem) translateY(0rem) rotate(0deg);
+
+                    &:hover{
+                        z-index: 2;
+                        transform: translateX(0rem) translateY(0rem) rotate(0deg) scale(1.1);
+                        transition: .5s ease-in-out;
+                    }
                 }
             }
         }

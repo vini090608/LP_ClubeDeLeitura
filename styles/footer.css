@@ -76,3 +76,30 @@ footer{
         }
     }
 }
+
+@media (width < 80em){
+    footer{
+        .footer{
+            width: 60em;
+            overflow: hidden;
+        }
+    }
+}
+
+@media (width < 50em){
+    footer{
+        height: 50vh;
+        .footer{
+            width: 40em;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            align-items: center;
+
+            #logo{
+                width: 20rem;
+            }
+        }
+    }
+}

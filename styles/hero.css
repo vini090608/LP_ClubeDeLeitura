@@ -134,3 +134,26 @@ section#hero{
     opacity: 1;
   }
 }
+
+@media (width < 99em){
+    section#hero{
+        background-size: auto;
+        overflow: hidden;
+
+        .h-bg{
+            background-size: cover;
+        }
+    }
+}
+
+@media (width < 60em){
+    section#hero{
+        .h-bg{
+            div.text-hero2{
+                h2{
+                    font: var(--body-md);
+                }
+            }
+        }
+    }
+}
